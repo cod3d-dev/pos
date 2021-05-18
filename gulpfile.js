@@ -10,7 +10,7 @@ const rename = require('gulp-rename');
 const imagemin = require('gulp-imagemin');
 const notify = require('gulp-notify');
 const cache = require('gulp-cache');
-const webp = require('gulp-webp');
+const webp = require('gulp-webp'); // Test
 
 const paths = {
     scss: 'src/scss/**/*.scss',
