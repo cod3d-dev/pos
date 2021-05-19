@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/build/css/app.css">
+
+
+
+    <title>Ingresar Compras</title>
+</head>
+
+<body>
+
+    <header class="header">
+        
+        <div class= "contenedor">
+
+            <div class="barra">
+                <a href="/">
+                    <!--incluir logo-->
+
+                </a>    
+                <nav class="navegacion">
+                    <a href="">Ingresar Compra</a>
+                    <a href="">Devolver Compra</a>
+                    <a href="">Modificar Compra</a>
+                    <a href="">Imprimir</a>
+                    <a href="">Salir</a>
+                    
+           
+                </nav>
+            </div>
+ 
+
+        </div>
+
+    </header>
+
+    <maim>
+        <h1>Ingresar Compras</h1>
+            <section>
+            <div class="barra">
+                <a href="/">
+                    <!--incluir logo-->
+
+                </a>    
+                <nav class="navegacion">
+                    <a href="">Productos</a>
+                    <a href="">Proveedores</a>
+                    <a href="">Clientes</a>
+                    <a href="">Compras</a>
+                    <a href="">Ventas</a>
+                    <a href="">Inventario</a>
+                    <a href="">Reportes</a>
+                    <a href="">Usuarios</a>
+                </nav>
+            </div>
+
+            </section>
+            
+            <form class="formulario">
+                <fieldset>
+                    <legend>Datos del Proveedor</legend>
+                    <label for="rif">RIF</label>
+                    <input type="text" placeholder="RIF" id="rif">
+
+                    <label for="nombre">Nombre</label>
+                    <input type="text" placeholder="Nombre Proveedor" id="nombre">
+
+                    <label for="fecha">Fecha de Compra</label>
+                    <input type="date" placeholder="Fecha Compra" id="fecha">
+
+                    <label for="numf">Número de Factura</label>
+                    <input type="text" placeholder="Número de Factura" id="numf">
+
+                    <label for="numc">Número de Control</label>
+                    <input type="text" placeholder="Número de Control" id="numc">
+
+                    <label for="deposito">Depósito</label>
+                    <input type="text" placeholder="Depósito" id="deposito">
+                    
+                    
+                </fieldset>
+
+                <fieldset>
+                    <legend>Gastos de Envio</legend>
+                    
+                    <label for="tipo">Tipo de Envio</label>
+                    
+                    <select id="tipo">
+                        <option value="Aereo">Envio aereo</option>
+                        <option value="Maritimo">Envio marítimo"</option>
+                    </select>
+
+
+                    <label for="ruta">Ruta</label>
+                    <select   id="ruta">
+                        <option value="China-USA">China - USA</option>
+                        <option value="USA-Venezuela">USA - Venezuela</option>
+                    </select>
+
+
+                    <label for="incluir">¿Incluido en la factura?</label>
+                    <select id="incluir">
+                        <option value="Sí">Sí</option>
+                        <option value="No">No</option>
+                    </select>    
+                        
+                    
+                    <label for="numfenvio">Número de Factura</label>
+                    <input type="text" placeholder="Número de Factura" id="numfenvio">
+
+                    <label for="numcenvio">Número de Control</label>
+                    <input type="text" placeholder="Número de Control" id="numcenvio">
+
+                    <label for="montoenvio">Monto Envio</label>
+                    <input type="number" placeholder="Monto de envio" id="montoenvio">
+                    
+                    
+                </fieldset>
+
+
+                <fieldset>
+                    <legend>Otros Gastos o Descuentos</legend>
+                    <label for="tipogasto">Tipo de Gasto</label>
+                    <input type="text" placeholder="Tipo de Envio" id="tipogasto">
+
+                    <label for="montogasto">Monto de Gasto</label>
+                    <input type="number" placeholder="Depósito" id="montogasto">
+                                        
+                </fieldset>
+
+                <fieldset>
+                    <legend> Factura No. </legend>
+                        <label>Subtotal</label>
+                        <input type="number" name="subtotalfactura" value="1000" readonly>
+                        
+                        <label>Envios incluidos</label>
+                        <input type="number" name="totalenvios" value="100" readonly>
+                        
+                        <label>Gastos incluidos</label>
+                        <input type="number" name="totalgastos" value="50" readonly>
+                        
+                        <label>Total Descuentos</label>
+                        <input type="number" name="totaldescuentos" value="10" readonly>
+                        
+                        <label>Impuesto</label>
+                        <input type="number" name="totalimpuesto" value="16" readonly>
+                        
+                        <label>Total Factura</label>
+                        <input type="number" name="totalfactura" value="1000000" readonly>
+                        
+                    </legend>
+                </fieldset>
+
+
+
+                <fieldset>
+                    <legend>Detalle de la Compra</legend>
+                        
+                        
+                        <input type="text" placeholder="Código" disabled>
+                        <input type="text" placeholder="Descripción" disabled>
+                        <input type="number" placeholder="Costo Unitario" disabled>
+                        <input type="number" placeholder="Cantidad" disabled>
+                        <input type="number" placeholder="Subtotal" disabled>
+
+                        <input type="text" placeholder="Código">
+                        <input type="text" placeholder="Descripción">
+                        <input type="number" placeholder="Costo Unitario">
+                        <input type="number" placeholder="Cantidad">
+                        <input type="number" name="subtotal" value="100" readonly>
+                </fieldset>
+            </form>   
+             
+</maim>
+</body>
+</html>

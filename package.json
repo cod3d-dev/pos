@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/cod3d-dev/pos#readme",
   "devDependencies": {
+    "autoprefixer": "^10.2.5",
     "cssnano": "^5.0.2",
     "dart-sass": "^1.25.0",
     "gulp": "^4.0.2",
@@ -32,6 +33,7 @@
     "gulp-terser-js": "^5.2.2",
     "gulp-webp": "^4.0.1",
     "node-sass": "^4.14.1",
+    "postcss": "^8.2.15",
     "terser": "^5.7.0"
   }
 }
