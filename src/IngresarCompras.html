@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/build/css/app.css">
+    <link rel="stylesheet" href="/build/css/app2.css">
 
 
 
@@ -20,7 +21,6 @@
             <div class="barra">
                 <a href="/">
                     <!--incluir logo-->
-
                 </a>    
                 <nav class="navegacion">
                     <a href="">Ingresar Compra</a>
@@ -28,8 +28,6 @@
                     <a href="">Modificar Compra</a>
                     <a href="">Imprimir</a>
                     <a href="">Salir</a>
-                    
-           
                 </nav>
             </div>
  
@@ -44,7 +42,6 @@
             <div class="barra">
                 <a href="/">
                     <!--incluir logo-->
-
                 </a>    
                 <nav class="navegacion">
                     <a href="">Productos</a>
@@ -60,29 +57,65 @@
 
             </section>
             
-            <form class="formulario">
-                <fieldset>
-                    <legend>Datos del Proveedor</legend>
-                    <label for="rif">RIF</label>
-                    <input type="text" placeholder="RIF" id="rif">
+            <form class="compra">
 
-                    <label for="nombre">Nombre</label>
-                    <input type="text" placeholder="Nombre Proveedor" id="nombre">
+                <div class="encabezado-compra">
 
-                    <label for="fecha">Fecha de Compra</label>
-                    <input type="date" placeholder="Fecha Compra" id="fecha">
+                    <fieldset class="datos"> <!-- Datos de la factura -->
+                        <legend>Datos de la compra</legend>
+                        
+                        <div>
+                            <label for="proveedor">Proveedor</label>
+                            <input type="text" placeholder="Nombre del proveedor" id="proveedor" class="datos-proveedor">
+                        </div>
 
-                    <label for="numf">Número de Factura</label>
-                    <input type="text" placeholder="Número de Factura" id="numf">
+                        <div>
+                            <label for="factura">Número de Factura</label>
+                            <input type="text" placeholder="Número de Factura" id="factura" class="datos-factura">
+                        </div>
+                        
+                        <div>
+                            <label for="control">Número de Control</label>
+                            <input type="text" placeholder="Número de Control" id="control" class="datos-control">
+                        </div>
 
-                    <label for="numc">Número de Control</label>
-                    <input type="text" placeholder="Número de Control" id="numc">
+                        <div>
+                            <label for="fecha">Fecha de Compra</label>
+                            <input type="date" placeholder="Fecha de compra" id="fecha" class="datos-fecha">
+                        </div>
+                        
+                        <div>
+                            <label for="deposito">Depósito</label>
+                            <select id="deposito" class="datos-deposito">
+                                <option value="1">Deposito 1</option>
+                                <option value="2">Deposito 2</option>
+                            </select>
+                        </div>
+                    </fieldset>
 
-                    <label for="deposito">Depósito</label>
-                    <input type="text" placeholder="Depósito" id="deposito">
-                    
-                    
-                </fieldset>
+                    <fieldset class="totales">
+                        <legend> Factura No. </legend>
+                            <label>Subtotal</label>
+                            <input type="number" name="subtotalfactura" value="1000" readonly>
+                            
+                            <label>Envios incluidos</label>
+                            <input type="number" name="totalenvios" value="100" readonly>
+                            
+                            <label>Gastos incluidos</label>
+                            <input type="number" name="totalgastos" value="50" readonly>
+                            
+                            <label>Total Descuentos</label>
+                            <input type="number" name="totaldescuentos" value="10" readonly>
+                            
+                            <label>Impuesto</label>
+                            <input type="number" name="totalimpuesto" value="16" readonly>
+                            
+                            <label>Total Factura</label>
+                            <input type="number" name="totalfactura" value="1000000" readonly>
+                            
+                        </legend>
+                    </fieldset>
+                </div>
 
                 <fieldset>
                     <legend>Gastos de Envio</legend>
@@ -132,28 +165,7 @@
                                         
                 </fieldset>
 
-                <fieldset>
-                    <legend> Factura No. </legend>
-                        <label>Subtotal</label>
-                        <input type="number" name="subtotalfactura" value="1000" readonly>
-                        
-                        <label>Envios incluidos</label>
-                        <input type="number" name="totalenvios" value="100" readonly>
-                        
-                        <label>Gastos incluidos</label>
-                        <input type="number" name="totalgastos" value="50" readonly>
-                        
-                        <label>Total Descuentos</label>
-                        <input type="number" name="totaldescuentos" value="10" readonly>
-                        
-                        <label>Impuesto</label>
-                        <input type="number" name="totalimpuesto" value="16" readonly>
-                        
-                        <label>Total Factura</label>
-                        <input type="number" name="totalfactura" value="1000000" readonly>
-                        
-                    </legend>
-                </fieldset>
+                
 
 
 

@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/cod3d-dev/pos#readme",
   "devDependencies": {
+    "autoprefix": "^1.0.1",
     "autoprefixer": "^10.2.5",
     "cssnano": "^5.0.2",
     "dart-sass": "^1.25.0",

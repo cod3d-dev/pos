@@ -2,3 +2,15 @@
     color: $primario;
     background-color: $secundario;
 }
+
+.datos {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    column-gap: $separacion * 2;
+}
+
+.encabezado-compra {
+    display: flex;
+    flex-direction: row;
+}
+

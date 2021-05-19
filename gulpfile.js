@@ -19,7 +19,16 @@ const paths = {
 }
 
 // css es una función que se puede llamar automaticamente
-function css() {
+function css() { // css sin minificar
+    return src(paths.scss)
+        .pipe(sass())
+        // .pipe(postcss([autoprefixer(), cssnano()]))
+        // .pipe(postcss([autoprefixer()]))
+        // .pipe(sourcemaps.write('.'))
+        .pipe( dest('./build/css') );
+}
+
+function cssmin() {
     return src(paths.scss)
         .pipe(sourcemaps.init())
         .pipe(sass())
