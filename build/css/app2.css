@@ -86,3 +86,12 @@ h4 {
   .detalle-compra {
     display: flex;
     flex-direction: column; } }
+
+.modal {
+  position: relative;
+  width: 80%;
+  display: block;
+  background-color: red;
+  top: 0;
+  border: 5px solid red;
+  color: blue; }
