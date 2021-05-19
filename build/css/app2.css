@@ -1,2 +1,88 @@
-@import url("https://fonts.googleapis.com/css?family=Lato:300,400,700,900");html{box-sizing:border-box;font-size:62.5%}*,:after,:before{box-sizing:inherit}body{font-family:Lato,sans-serif;font-size:1.6rem;line-height:1.8}p{color:#000;font-size:2rem}.contenedor{margin:0 auto;max-width:120rem;width:95%}a{text-decoration:none}img,picture{display:block;width:100%}h1,h2,h3{font-family:Lato,sans-serif;font-weight:300;margin:2.5rem 0;text-align:center}h1{font-size:3.8rem}h2{font-size:3.4rem}h3{font-size:3rem}h4{font-size:2.6rem}.seccion{margin-bottom:2.5rem;margin-top:2.5rem}.contenido-centrado{max-width:800px}.proveedor-nombre{background-color:#000;color:#fff}.encabezado-compra{-moz-column-gap:5rem;column-gap:5rem;display:grid;grid-template-columns:3fr 2fr}.datos{display:flex;flex-direction:column}
-/*# sourceMappingURL=app2.css.map */
+@import url("https://fonts.googleapis.com/css?family=Lato:300,400,700,900");
+/** Media Queries **/
+html {
+  font-size: 62.5%;
+  box-sizing: border-box; }
+
+*, *:before, *:after {
+  box-sizing: inherit; }
+
+body {
+  font-family: "Lato", sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.8; }
+
+p {
+  color: #000000;
+  font-size: 2rem; }
+
+.contenedor {
+  width: 95%;
+  max-width: 120rem;
+  margin: 0 auto; }
+
+a {
+  text-decoration: none; }
+
+img,
+picture {
+  width: 100%;
+  display: block; }
+
+h1, h2, h3 {
+  font-family: "Lato", sans-serif;
+  margin: 2.5rem 0;
+  font-weight: 300;
+  text-align: center; }
+
+h1 {
+  font-size: 3.8rem; }
+
+h2 {
+  font-size: 3.4rem; }
+
+h3 {
+  font-size: 3rem; }
+
+h4 {
+  font-size: 2.6rem; }
+
+.seccion {
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem; }
+
+.contenido-centrado {
+  max-width: 800px; }
+
+.proveedor-nombre {
+  color: #FFFFFF;
+  background-color: #000000; }
+
+@media (min-width: 768px) {
+  .encabezado-compra {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    column-gap: 1.25rem; } }
+
+.datos {
+  display: flex;
+  flex-direction: column; }
+
+@media (min-width: 768px) {
+  .fila-compra {
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr 2fr 2fr;
+    column-gap: 1.25rem; } }
+
+.elemento-compra {
+  width: 90%;
+  display: flex; }
+  @media (min-width: 768px) {
+    .elemento-compra {
+      display: flex;
+      flex-direction: column; } }
+
+@media (min-width: 768px) {
+  .detalle-compra {
+    display: flex;
+    flex-direction: column; } }

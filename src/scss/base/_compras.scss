@@ -4,13 +4,43 @@
 }
 
 .encabezado-compra {
-    display: grid;
-    grid-template-columns: 3fr 2fr;
-    column-gap: $separacion * 2/2;
+    
+
+    @include tablet {
+        display: grid;
+        grid-template-columns: 3fr 2fr;
+        column-gap: $separacion / 4;
+    }
 }
 
 .datos {
     display: flex;
     flex-direction: column;
 }
+
+.fila-compra { 
+    @include tablet {
+        display: grid;
+        grid-template-columns: 1fr 5fr 1fr 2fr 2fr;
+        column-gap: $separacion/4;
+    }
+}
+
+.elemento-compra {
+    width: 90%;
+    display:flex;
+
+    @include tablet{
+        display: flex;
+        flex-direction: column;
+    }
+}
+.detalle-compra {
+    
+    @include tablet {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
 

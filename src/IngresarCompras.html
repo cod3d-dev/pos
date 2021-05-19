@@ -65,27 +65,27 @@
                         <legend>Datos de la compra</legend>
                         
                         <div>
-                            <label for="proveedor">Proveedor</label>
+                            <label for="proveedor">Proveedor</label> <!-- Autocompletar - Button crear - Boton Buscar - Preguntar si crear -->
                             <input type="text" placeholder="Nombre del proveedor" id="proveedor" class="datos-proveedor">
                         </div>
 
                         <div>
-                            <label for="factura">Número de Factura</label>
+                            <label for="factura">Número de Factura</label> <!-- Validacion numero proveedor -->
                             <input type="text" placeholder="Número de Factura" id="factura" class="datos-factura">
                         </div>
                         
                         <div>
-                            <label for="control">Número de Control</label>
+                            <label for="control">Número de Control</label> <!-- No obligatorio - Validacion numero proveedor -->
                             <input type="text" placeholder="Número de Control" id="control" class="datos-control">
                         </div>
 
                         <div>
-                            <label for="fecha">Fecha de Compra</label>
+                            <label for="fecha">Fecha de Compra</label> <!-- Validacion Fecha Futura -->
                             <input type="date" placeholder="Fecha de compra" id="fecha" class="datos-fecha">
                         </div>
                         
                         <div>
-                            <label for="deposito">Depósito</label>
+                            <label for="deposito">Depósito</label> <!-- Autocompletar -->
                             <select id="deposito" class="datos-deposito">
                                 <option value="1">Deposito 1</option>
                                 <option value="2">Deposito 2</option>
@@ -94,30 +94,109 @@
                     </fieldset>
 
                     <fieldset class="totales datos">
-                        <legend> Factura No. </legend>
-                            <label>Subtotal</label>
-                            <input type="number" name="subtotalfactura" value="1000" readonly>
+                        <legend> Totales </legend>
+                                
+                            <div>
+                                <label>Envios</label> <!-- Ventana modal con detalles - Boton agregar - Aparece solo si valor > 0-->
+                                <input type="number" name="totalenvios" value="100" readonly>
+                            </div>
+
+                            <div>
+                                <label>Otros Gastos</label> <!-- Ventana modal con detalles - Boton agregar - Aparece solo si valor > 0-->
+                                <input type="number" name="totalgastos" value="50" readonly>
+                            </div>
+
+                            <div>
+                                <label>Descuentos</label> <!-- Ventana modal con detalles - Boton agregar - Aparece solo si valor > 0-->
+                                <input type="number" name="totaldescuentos" value="10" readonly>
+                            </div>
+
+                            <div>
+                                <label>Subtotal</label> 
+                                <input type="number" name="subtotalfactura" value="1000" readonly>
+                            </div>
+
                             
-                            <label>Envios incluidos</label>
-                            <input type="number" name="totalenvios" value="100" readonly>
-                            
-                            <label>Gastos incluidos</label>
-                            <input type="number" name="totalgastos" value="50" readonly>
-                            
-                            <label>Total Descuentos</label>
-                            <input type="number" name="totaldescuentos" value="10" readonly>
-                            
-                            <label>Impuesto</label>
-                            <input type="number" name="totalimpuesto" value="16" readonly>
-                            
-                            <label>Total Factura</label>
-                            <input type="number" name="totalfactura" value="1000000" readonly>
-                            
+                            <div>
+                                <label>Impuesto</label> <!-- Traer default de sistema - Opcion eliminar  > 0-->
+                                <input type="number" name="totalimpuesto" value="16" readonly>
+                            </div>
+
+                            <div>
+                                <label>Total</label>
+                                <input type="number" name="totalfactura" value="1000000" readonly>
+                            </div>
+
                         </legend>
                     </fieldset>
                 </div>
 
+                
+
+
+
                 <fieldset>
+                    <legend>Detalle de la Compra</legend>
+                        
+
+                        <div class="elemento-compra">
+                            <div class=fila-compra>
+                                <div class="elemento-compra">
+                                    <input type="text" placeholder="Código" disabled> <!-- Buscar codigo o nombre -->
+                                </div>
+                                
+                                <div class="elemento-compra">
+                                    <input type="text" placeholder="Descripción" disabled> <!-- Buscar codigo o nombre -->
+                                </div>
+
+                                <div class="elemento-compra">
+                                    <input type="number" placeholder="Cantidad" disabled> <!-- Aparece ventana de variaciones -->
+                                </div>
+
+                                <div class="elemento-compra">
+                                    <input type="number" placeholder="Costo Unitario" disabled> <!-- Aparece ventana de precio -->
+                                </div>
+
+                                <div class="elemento-compra">
+                                    <input type="number" placeholder="Subtotal" disabled>                       
+                                </div>
+                                
+                            </div>
+
+                            <div class=fila-compra>
+                                <div class="elemento-compra">
+                                    <input type="text" placeholder="Código">
+                                </div>
+                                
+                                <div class="elemento-compra">
+                                    <input type="text" placeholder="Descripción">
+                                </div>
+
+                                <div class="elemento-compra">
+                                    <input type="number" placeholder="Cantidad">
+                                </div>
+
+                                <div class="elemento-compra">
+                                    <input type="number" placeholder="Costo Unitario">
+                                </div>
+
+                                <div class="elemento-compra">
+                                    <input type="number" name="subtotal" value="100" readonly>
+                                </div>
+                                
+                            </div>
+                        </div>
+
+                        
+
+               
+
+
+                </fieldset>
+
+
+                
+                <fieldset style="display:none">
                     <legend>Gastos de Envio</legend>
                     
                     <label for="tipo">Tipo de Envio</label>
@@ -155,7 +234,7 @@
                 </fieldset>
 
 
-                <fieldset>
+                <fieldset style="display:none">
                     <legend>Otros Gastos o Descuentos</legend>
                     <label for="tipogasto">Tipo de Gasto</label>
                     <input type="text" placeholder="Tipo de Envio" id="tipogasto">
@@ -165,26 +244,7 @@
                                         
                 </fieldset>
 
-                
-
-
-
-                <fieldset>
-                    <legend>Detalle de la Compra</legend>
-                        
-                        
-                        <input type="text" placeholder="Código" disabled>
-                        <input type="text" placeholder="Descripción" disabled>
-                        <input type="number" placeholder="Costo Unitario" disabled>
-                        <input type="number" placeholder="Cantidad" disabled>
-                        <input type="number" placeholder="Subtotal" disabled>
-
-                        <input type="text" placeholder="Código">
-                        <input type="text" placeholder="Descripción">
-                        <input type="number" placeholder="Costo Unitario">
-                        <input type="number" placeholder="Cantidad">
-                        <input type="number" name="subtotal" value="100" readonly>
-                </fieldset>
+                <button>Totalizar</button>
             </form>   
              
 </maim>
