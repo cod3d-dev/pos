@@ -3,13 +3,13 @@
 =============================================*/
 
 .prov-flex{
-    display:flex;
+    display: flex;
     flex-direction: row;
-    margin-top: $separacion/5;
+    margin-top: $separacion/4;
 }
 
 .prov-campo{
-    display:grid;
+    display: grid;
     grid-template-columns: 40% 60%;
     column-gap: $separacion/4;
 }
@@ -36,7 +36,7 @@
 .prov-campo-3col{
     display:grid;
     grid-template-columns: 40% 30% 30%;
-    column-gap:2rem;
+    column-gap:$separacion/4;
 }
 
 .datos {
