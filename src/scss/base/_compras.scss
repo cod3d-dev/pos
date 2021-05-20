@@ -4,8 +4,6 @@
 }
 
 .encabezado-compra {
-    
-
     @include tablet {
         display: grid;
         grid-template-columns: 3fr 2fr;

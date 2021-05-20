@@ -19,15 +19,15 @@
 .prov-label{
     
     flex: 0 0 8rem;
-}
+   
 
 .prov-label2{
     
     flex: 0 0 15rem;
 }
 
-.campo-largo{
-    flex: 0 0 30rem;
+.field{
+    width:100%;
 }
 
 .prov-campo-3col{
@@ -35,3 +35,4 @@
     grid-template-columns: 40% 30% 30%;
     column-gap:2rem;
 }
+
