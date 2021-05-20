@@ -7,7 +7,7 @@
 .prov-campo{
     display:grid;
     grid-template-columns: 40% 60%;
-    column-gap:2rem;
+    column-gap: $separacion/4;
 }
 
 .prov-campo2{
@@ -26,12 +26,18 @@
     flex: 0 0 15rem;
 }
 
-.campo-largo{
-    flex: 0 0 30rem;
-}
 
 .prov-campo-3col{
     display:grid;
     grid-template-columns: 40% 30% 30%;
     column-gap:2rem;
+}
+
+.datos {
+    padding-left: $separacion/2;
+    padding-right: $separacion/2;
+}
+
+.prov-input{
+    width: 100%;
 }
