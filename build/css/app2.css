@@ -180,7 +180,7 @@ h4 {
 .prov-flex {
   display: flex;
   flex-direction: row;
-  margin-top: 1rem; }
+  margin-top: 1.25rem; }
 
 .prov-campo {
   display: grid;
@@ -201,7 +201,7 @@ h4 {
 .prov-campo-3col {
   display: grid;
   grid-template-columns: 40% 30% 30%;
-  column-gap: 2rem; }
+  column-gap: 1.25rem; }
 
 .datos {
   padding-left: 2.5rem;
