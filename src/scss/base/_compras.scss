@@ -67,6 +67,7 @@
     border: 2px solid $negro;
     background-color: $gris;
     color: $secundario;
+    overflow: auto;
     
     .modal-titulo{
         display: block;
@@ -91,6 +92,8 @@
     gap: $separacion /2;
 }
 
+
+// Ventana de envio
 .envio-detalles {
     width: 100%;
     overflow: hidden;
@@ -117,4 +120,34 @@
 
 .envio-boton{
     margin-left: $separacion/4;
+}
+
+// Variaciones del producto
+.variacion-fila{
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+}
+
+.variacion-elemento {
+    width: 100%;
+}
+
+.variacion-opc {
+    margin-top: $separacion/2;
+}
+
+.variacion-producto {
+    margin-top: $separacion/4;
+    padding: $separacion/4;
+    
+    background-color: $grisOscuro;
+    color: $primario;
+}
+
+.label-total{
+    border: 1px solid $gris;
+    text-align: right;
+    padding-right: $separacion/4;
+    font-weight: $bold;
+    
 }
