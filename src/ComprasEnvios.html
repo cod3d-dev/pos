@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/build/css/app.css">
+    <link rel="stylesheet" href="/build/css/app2.css">
+
+
+
+    <title>Ingresar Compras</title>
+</head>
+
+<body>
+
+    <header class="header">
+        
+        <div class= "contenedor">
+
+            <div class="barra">
+                <a href="/">
+                    <!--incluir logo-->
+                </a>    
+                <nav class="navegacion">
+                    <a href="">Ingresar Compra</a>
+                    <a href="">Devolver Compra</a>
+                    <a href="">Modificar Compra</a>
+                    <a href="">Imprimir</a>
+                    <a href="">Salir</a>
+                </nav>
+            </div>
+ 
+
+        </div>
+
+    </header>
+
+    <main>
+    
+        
+        <h1>Ingresar Compras</h1>
+            <section>
+                <div class="barra">
+                    <a href="/">
+                        <!--incluir logo-->
+                    </a>    
+                    <nav class="navegacion">
+                        <a href="">Productos</a>
+                        <a href="">Proveedores</a>
+                        <a href="">Clientes</a>
+                        <a href="">Compras</a>
+                        <a href="">Ventas</a>
+                        <a href="">Inventario</a>
+                        <a href="">Reportes</a>
+                        <a href="">Usuarios</a>
+                    </nav>
+                </div>
+
+            </section>
+            
+            <form class="compra">
+
+                <div class="encabezado-compra">
+
+                    <fieldset class="datos"> <!-- Datos de la factura -->
+                        <legend>Datos de la compra</legend>
+                        
+                        <div>
+                            <label for="proveedor">Proveedor</label> <!-- Autocompletar - Button crear - Boton Buscar - Preguntar si crear -->
+                            <input type="text" placeholder="Nombre del proveedor" id="proveedor" class="datos-proveedor">
+                        </div>
+
+                        <div>
+                            <label for="factura">Número de Factura</label> <!-- Validacion numero proveedor -->
+                            <input type="text" placeholder="Número de Factura" id="factura" class="datos-factura">
+                        </div>
+                        
+                        <div>
+                            <label for="control">Número de Control</label> <!-- No obligatorio - Validacion numero proveedor -->
+                            <input type="text" placeholder="Número de Control" id="control" class="datos-control">
+                        </div>
+
+                        <div>
+                            <label for="fecha">Fecha de Compra</label> <!-- Validacion Fecha Futura -->
+                            <input type="date" placeholder="Fecha de compra" id="fecha" class="datos-fecha">
+                        </div>
+                        
+                        <div>
+                            <label for="deposito">Depósito</label> <!-- Autocompletar -->
+                            <select id="deposito" class="datos-deposito">
+                                <option value="1">Deposito 1</option>
+                                <option value="2">Deposito 2</option>
+                            </select>
+                        </div>
+                    </fieldset>
+
+                    <fieldset class="totales datos">
+                        <legend> Totales </legend>
+                                
+                            <div>
+                                <label>Envios</label> <!-- Ventana modal con detalles - Boton agregar - Aparece solo si valor > 0-->
+                                <input type="number" name="totalenvios" value="100" readonly>
+                            </div>
+
+                            <div>
+                                <label>Otros Gastos</label> <!-- Ventana modal con detalles - Boton agregar - Aparece solo si valor > 0-->
+                                <input type="number" name="totalgastos" value="50" readonly>
+                            </div>
+
+                            <div>
+                                <label>Descuentos</label> <!-- Ventana modal con detalles - Boton agregar - Aparece solo si valor > 0-->
+                                <input type="number" name="totaldescuentos" value="10" readonly>
+                            </div>
+
+                            <div>
+                                <label>Subtotal</label> 
+                                <input type="number" name="subtotalfactura" value="1000" readonly>
+                            </div>
+
+                            
+                            <div>
+                                <label>Impuesto</label> <!-- Traer default de sistema - Opcion eliminar  > 0-->
+                                <input type="number" name="totalimpuesto" value="16" readonly>
+                            </div>
+
+                            <div>
+                                <label>Total</label>
+                                <input type="number" name="totalfactura" value="1000000" readonly>
+                            </div>
+
+                        </legend>
+                    </fieldset>
+                </div>
+
+                
+
+
+
+                <fieldset>
+                    <legend>Detalle de la Compra</legend>
+                        
+
+                        <div class="elemento-compra">
+                            <div class=fila-compra>
+                                <div class="elemento-compra">
+                                    <input type="text" placeholder="Código" disabled> <!-- Buscar codigo o nombre -->
+                                </div>
+                                
+                                <div class="elemento-compra">
+                                    <input type="text" placeholder="Descripción" disabled> <!-- Buscar codigo o nombre -->
+                                </div>
+
+                                <div class="elemento-compra">
+                                    <input type="number" placeholder="Cantidad" disabled> <!-- Aparece ventana de variaciones -->
+                                </div>
+
+                                <div class="elemento-compra">
+                                    <input type="number" placeholder="Costo Unitario" disabled> <!-- Aparece ventana de precio -->
+                                </div>
+
+                                <div class="elemento-compra">
+                                    <input type="number" placeholder="Subtotal" disabled>                       
+                                </div>
+                                
+                            </div>
+
+                            <div class=fila-compra>
+                                <div class="elemento-compra">
+                                    <input type="text" placeholder="Código">
+                                </div>
+                                
+                                <div class="elemento-compra">
+                                    <input type="text" placeholder="Descripción">
+                                </div>
+
+                                <div class="elemento-compra">
+                                    <input type="number" placeholder="Cantidad">
+                                </div>
+
+                                <div class="elemento-compra">
+                                    <input type="number" placeholder="Costo Unitario">
+                                </div>
+
+                                <div class="elemento-compra">
+                                    <input type="number" name="subtotal" value="100" readonly>
+                                </div>
+                                
+                            </div>
+                        </div>
+
+                        
+
+               
+
+
+                </fieldset>
+
+
+                
+                <fieldset style="display:none">
+                    <legend>Gastos de Envio</legend>
+                    
+                    <label for="tipo">Tipo de Envio</label>
+                    
+                    <select id="tipo">
+                        <option value="Aereo">Envio aereo</option>
+                        <option value="Maritimo">Envio marítimo"</option>
+                    </select>
+
+
+                    <label for="ruta">Ruta</label>
+                    <select   id="ruta">
+                        <option value="China-USA">China - USA</option>
+                        <option value="USA-Venezuela">USA - Venezuela</option>
+                    </select>
+
+
+                    <label for="incluir">¿Incluido en la factura?</label>
+                    <select id="incluir">
+                        <option value="Sí">Sí</option>
+                        <option value="No">No</option>
+                    </select>    
+                        
+                    
+                    <label for="numfenvio">Número de Factura</label>
+                    <input type="text" placeholder="Número de Factura" id="numfenvio">
+
+                    <label for="numcenvio">Número de Control</label>
+                    <input type="text" placeholder="Número de Control" id="numcenvio">
+
+                    <label for="montoenvio">Monto Envio</label>
+                    <input type="number" placeholder="Monto de envio" id="montoenvio">
+                    
+                    
+                </fieldset>
+
+
+                <fieldset style="display:none">
+                    <legend>Otros Gastos o Descuentos</legend>
+                    <label for="tipogasto">Tipo de Gasto</label>
+                    <input type="text" placeholder="Tipo de Envio" id="tipogasto">
+
+                    <label for="montogasto">Monto de Gasto</label>
+                    <input type="number" placeholder="Depósito" id="montogasto">
+                                        
+                </fieldset>
+
+                <button>Totalizar</button>
+            </form>   
+
+            <div class="modaltope hidden">
+                <p>Test</p>
+            </div>
+
+            <div class="modalcentro">
+                <div class="modal-titulo">
+                    Costos de envio
+                </div>
+                <div class="modal-contenido">
+                    
+                    <div class="envio-detalles">
+
+                        <div class="envio-fila">
+                                <label for="envio-descripcion">Descripcion</label>
+                                <label for="envio-costo">Costo</label>
+                                <label for="envio-costo">Incluído en factura</label>
+                                <label for="envio-fact">No. Factura</label>
+                        </div>
+
+                        <div class="envio-fila">
+                                <input type="text" id="envio-descripcion" class="envio-elemento">
+                                <input type="text" id="envio-costo" class="envio-elemento">
+                                <select name="envio-inc" id="envio-inc">
+                                    <option value="no">No</option>
+                                    <option value="si">Si</option>
+                                </select>
+                                <input type="text" id="envio-fact" class="envio-elemento">
+                        </div>
+
+                        <div class="envio-fila">
+                            <input type="text" id="envio-descripcion" class="envio-elemento">
+                            <input type="text" id="envio-costo" class="envio-elemento">
+                            <select name="envio-inc" id="envio-inc">
+                                <option value="no">No</option>
+                                <option value="si">Si</option>
+                            </select>
+                            <input type="text" id="envio-fact" class="envio-elemento">
+                        </div>
+
+                        <div class="envio-fila">
+                            <input type="text" id="envio-descripcion" class="envio-elemento">
+                            <input type="text" id="envio-costo" class="envio-elemento">
+                            <select name="envio-inc" id="envio-inc">
+                                <option value="no">No</option>
+                                <option value="si">Si</option>
+                            </select>
+                            <input type="text" id="envio-fact" class="envio-elemento">
+                        </div>
+
+                        
+                        
+                    </div>
+
+                    <div class="envio-total">
+                        <label for="totalenvio">Total Envío:</label>
+                        <input type="text" id="totalenvio">
+                    </div>
+
+                    <div class="envio-botones">
+                        <button class="envio-boton">Cancelar</button>
+                        <button class="envio-boton">Aceptar</button>
+                    </div>
+                    
+                </div>
+                
+            </div>
+    </main>
+
+    
+
+
+</body>
+</html>

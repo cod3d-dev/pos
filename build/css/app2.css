@@ -87,11 +87,64 @@ h4 {
     display: flex;
     flex-direction: column; } }
 
-.modal {
-  position: relative;
+.modaltope {
+  position: absolute;
   width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
   display: block;
   background-color: red;
   top: 0;
   border: 5px solid red;
   color: blue; }
+
+.modalcentro {
+  position: absolute;
+  width: 80%;
+  height: 50%;
+  margin-top: 20%;
+  margin-left: 10%;
+  margin-right: 10%;
+  display: block;
+  top: 0;
+  border: 2px solid #000000;
+  background-color: #e1e1e1;
+  color: #000000; }
+  .modalcentro .modal-titulo {
+    display: block;
+    text-align: center;
+    background-color: #333333;
+    color: #FFFFFF; }
+
+.hidden {
+  display: none; }
+
+.modal-contenido {
+  padding: 1.25rem; }
+
+.col-2 {
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  gap: 2.5rem; }
+
+.envio-detalles {
+  width: 100%;
+  overflow: hidden; }
+
+.envio-elemento {
+  width: 100%; }
+
+.envio-total {
+  margin-top: 2.5rem;
+  margin-left: 50%; }
+
+.envio-fila {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr; }
+
+.envio-botones {
+  margin-top: 2.5rem;
+  text-align: right; }
+
+.envio-boton {
+  margin-left: 1.25rem; }
