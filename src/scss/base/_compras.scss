@@ -43,13 +43,84 @@
     }
 }
 
-.modal {
-    position: relative;
-    width: 80%;
+.modaltope {
+    
+    position: absolute;
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 5%;
     display: block;
-    background-color: red;
+    background-color:$gris;
     top: 0 ;
-    border: 5px solid red;
+    border: 2px solid $negro;
     color: blue;
+}
+
+.modalcentro {
+    
+    position: absolute;
+    width: 80%;
+    height: 50%;
+    margin-top:20%;
+    margin-left: 10%;
+    margin-right: 10%;
+    display: block;
+    top: 0 ;
+    border: 2px solid $negro;
+    background-color: $gris;
+    color: $secundario;
+    
     
 }
+
+.modal-titulo{
+    display: block;
+    text-align: center;
+    background-color: $grisOscuro;
+    color: $primario;
+}
+
+
+.hidden {
+    display: none;
+}
+
+.modal-contenido{
+    padding: $separacion/4;
+}
+
+.col-2 {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    gap: $separacion /2;
+}
+
+.envio-detalles {
+    width: 100%;
+    overflow: hidden;
+}
+
+.envio-elemento {
+    width: 100%;
+}
+
+.envio-total {
+    margin-top: $separacion / 2;
+    margin-left: 50%;
+}
+
+.envio-fila{
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+}
+
+.envio-botones{
+    margin-top: $separacion/2;
+    text-align: right;
+}
+
+.envio-boton{
+    margin-left: $separacion/4;
+}
+
