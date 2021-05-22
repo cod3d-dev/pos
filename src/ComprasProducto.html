@@ -258,166 +258,25 @@
 
 
 
-            <div class="modaltope">
+            <div class="modal-top">
                 <div class="modal-titulo">
-                    Proveedor
+                    Nuevo producto
                 </div>
                 <div class="modal-contenido">
-                    <form class="formulario-proveedor">
-                        <fieldset> 
-                            <legend>Datos Generales</legend>
-                        
-
-                               <div class="prov-campo">
-                                    <div class="prov-flex">
-                                        <label class="prov-label" for="rif">RIF</label>
-                                        <input  class="field" type="text" id="rif">
-                                    </div>
-                                    <div class="prov-flex">    
-                                        <label class="prov-label" for="prov-nombre">Nombre</label>
-                                        <input class="field" type="text" id="prov-nombre">
-                                    </div>
-                                </div>
-                            
-                                <div class="prov-flex">
-                                    <label for="direccion" class="prov-label">Dirección</label>
-                                    <input class="field" type="text" id="direccion" class="campo-largo">
-                    <fieldset class="datos"> 
-                        <legend>Datos Generales</legend>
                     
-                            <div class="prov-campo">
-                                <div class="prov-flex">
-                                    <label class="prov-label" for="rif">RIF</label>
-                                    <input  type="text" id="rif" class="prov-input">
-                                </div>
-                                <div class="prov-flex">    
-                                    <label class="prov-label" for="prov-nombre">Nombre</label>
-                                    <input class="prov-input" type="text" id="prov-nombre">
-                                </div>
-                            </div>
+                    <div class="producto-form">
 
-                            <div class="prov-flex">
-                                <label for="direccion" class="prov-label">Dirección</label>
-                                <input type="text" id="direccion" class="prov-input">
-                            </div>
-                            
-                            <div class="prov-campo-3col">
-                                <div class="prov-flex">
-                                    <label for="ciudad" class="prov-label">Ciudad</label>
-                                    <input type="text" id="ciudad" class="prov-input">
-                                </div>
-                                
-                                <div class="prov-flex">
-                                    <label for="estado" class="prov-label">Estado</label>
-                                    <select name="estadopais" id="estado" class="prov-input">
-                                        <option value="Amazonas">Amazonas</option>
-                                        <option value="Bolivar">Bolívar</option>
-                                    </select>
-                                </div>
+                        <label for="codProd" class="w-65">Código:</label>
+                        <input id="codProd" class="producto-el w-120"></inout>
 
-                                <div class="prov-flex">    
-                                    <label for="pais" class="prov-label"> País</label>
-                                    <select name="pais" id="pais" class="prov-input">
-                                        <option value="China">China</option>
-                                        <option value="USA">USA</option>
-                                        <option value="Venezuela">Venezuela</option>
-                                    
-                                    </select>
-                                </div>
-                            </div>
-                    </fieldset>
-                            
-                            <div class="prov-campo">
-                                
-                                    <div class="prov-flex">
-                                        <label for="contacto" class="prov-label">Contacto</label>
-                                        <input type="text" id="contacto">
-                                    </div>
-                                    <div class="prov-flex">
-                                        <label for="telefono" class="prov-label">Teléfonos</label>
-                                        <input type="tel" id="telefonos" class="">
-                                    </div>
-                                
-
-                                    <div class="prov-flex">
-                                        <label for="email" class="prov-label">Correo</label>
-                                        <input type="email" id="email" class="">
-                                    </div>
-                                
-                                    <div class="prov-flex">
-                                        <label for="socialmedia" class="prov-label">Otros</label>
-                                        <input type="text" id="socialmedia" class="">
-                                    </div>
-
-                                </div>    
-                       </fieldset>     
-                            
-                            
-
-                            <div class="prov-flex">
-                                <label for="email" class="prov-label">Correo</label>
-                                <input type="email" id="email" class="">
-                            </div>
                         
-                            <div class="prov-flex">
-                                <label for="socialmedia" class="prov-label">Otros</label>
-                                <input type="text" id="socialmedia" class="">
-                            </div>
-
-                        </div>     
-
-
-                    <fieldset class="datos"> <!-- Datos de la factura -->
-                        <legend>Opciones Avanzadas</legend>
-                    
-                            
-                           
-                                <div class="prov-flex">
-                                    <label class="prov-label2" for="tipoprov">Tipo de Proveedor</label>
-                                    <select name="estadopais" id="estado">
-                                        <option value="Nacional">Nacional</option>
-                                        <option value="Extranjero">Extranjero</option>
-                                    </select>
-                                </div>
-                           
-                            
-                           
-                                <div class="prov-flex">
-                                    <label class="prov-label2" for="tipocon">Tipo de Contribuyente</label>
-                                    <select name="tipocon" id="tipocon">
-                                        <option value="Ordinario">Ordinario</option>
-                                        <option value="Especial">Especial</option>
-                                    </select>
-                                </div>
-                             
-                            
-                            
-                                <div class="prov-flex">    
-                                    <label class="prov-label2" for="tipocon">Forma de Pago</label>
-                                    <select name="tipocon" id="tipocon">
-                                        <option value="Ordinario">Crédito</option>
-                                        <option value="Especial">Contado</option>
-                                    </select>
-                                </div>
-
-                                <div class="prov-flex">  
-                                        <label class="prov-label2" for="prov-nombre">Días de Crédito</label>
-                                        <input type="number" id="prov-nombre">
-                                </div>
-
-                                <div class="prov-flex">  
-                                        <label for="direccion" class="prov-label2">Límite de Crédito</label>
-                                        <input type="number" id="direccion">
-                                </div>
-
-                                <div class="prov-flex">  
-                                         <label for="direccion" class="prov-label2">Saldo</label>
-                                        <input type="number" id="direccion">
-
-                                </div>
-                                      
-                    </fieldset>  
+                        <label for="catProd" class="der-inline">Categoría</label>
+                        <input id="catProd" class="producto-el"></inout>
                         
+
+                        
+
+                    </div>
                     <div class="envio-botones">
                         <button class="envio-boton">Aceptar</button>
                         <button class="envio-boton">Cancelar</button>

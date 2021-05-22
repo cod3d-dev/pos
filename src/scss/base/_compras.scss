@@ -47,12 +47,13 @@
     width: 60%;
     margin-left: 20%;
     margin-right: 20%;
-    margin-top: 5%;
+    margin-top: 0;
     display: block;
     background-color:$gris;
     top: 0 ;
-    border: 2px solid $negro;
-    color: blue;
+    //border: 2px solid $negro;
+    box-shadow: 0px 0px 15px $grisOscuro;  
+    
 }
 
 .modalcentro {
