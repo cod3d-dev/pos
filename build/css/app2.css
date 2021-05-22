@@ -1,2 +1,214 @@
-@import url("https://fonts.googleapis.com/css?family=Lato:300,400,700,900");html{box-sizing:border-box;font-size:62.5%}*,:after,:before{box-sizing:inherit}body{font-family:Lato,sans-serif;font-size:1.6rem;line-height:1.8}p{color:#000;font-size:2rem}.contenedor{margin:0 auto;max-width:120rem;width:95%}a{text-decoration:none}img,picture{display:block;width:100%}h1,h2,h3{font-family:Lato,sans-serif;font-weight:300;margin:2.5rem 0;text-align:center}h1{font-size:3.8rem}h2{font-size:3.4rem}h3{font-size:3rem}h4{font-size:2.6rem}.seccion{margin-bottom:2.5rem;margin-top:2.5rem}.contenido-centrado{max-width:800px}.proveedor-nombre{background-color:#000;color:#fff}@media (min-width:768px){.encabezado-compra{-moz-column-gap:1.25rem;column-gap:1.25rem;display:grid;grid-template-columns:3fr 2fr}}.datos{display:flex;flex-direction:column}@media (min-width:768px){.fila-compra{-moz-column-gap:1.25rem;column-gap:1.25rem;display:grid;grid-template-columns:1fr 5fr 1fr 2fr 2fr}}.elemento-compra{display:flex;width:90%}@media (min-width:768px){.detalle-compra,.elemento-compra{display:flex;flex-direction:column}}.modaltope{color:#00f;margin-left:20%;margin-right:20%;margin-top:5%;width:60%}.modalcentro,.modaltope{background-color:#e1e1e1;border:2px solid #000;display:block;position:absolute;top:0}.modalcentro{color:#000;height:50%;margin-left:10%;margin-right:10%;margin-top:20%;overflow:auto;width:80%}.modal-titulo{background-color:#333;color:#fff;display:block;text-align:center}.hidden{display:none}.modal-contenido{padding:1.25rem}.col-2{gap:2.5rem;display:grid;grid-template-columns:4fr 1fr}.envio-detalles{overflow:hidden;width:100%}.envio-elemento{width:100%}.envio-total{margin-left:50%;margin-top:2.5rem}.envio-fila{display:grid;grid-template-columns:2fr 1fr 1fr 1fr}.envio-botones{margin-top:2.5rem;text-align:right}.envio-boton{margin-left:1.25rem}.variacion-fila{display:grid;grid-template-columns:4fr 1fr}.variacion-elemento{width:100%}.variacion-opc{margin-top:2.5rem}.variacion-producto{background-color:#333;color:#fff;margin-top:1.25rem;padding:1.25rem}.label-total{border:1px solid #e1e1e1;font-weight:700;padding-right:1.25rem;text-align:right}.prov-flex{display:flex;flex-direction:row;margin-top:1.25rem}.prov-campo{-moz-column-gap:1.25rem;column-gap:1.25rem;display:grid;grid-template-columns:40% 60%}.prov-campo2{-moz-column-gap:2rem;column-gap:2rem;display:grid;grid-template-columns:50% 50%}.prov-label{flex:0 0 8rem}.prov-label2{flex:0 0 15rem}.field{width:100%}.prov-campo-3col{-moz-column-gap:1.25rem;column-gap:1.25rem;display:grid;grid-template-columns:40% 30% 30%}.datos{padding-left:2.5rem;padding-right:2.5rem}.prov-input{width:100%}
-/*# sourceMappingURL=app2.css.map */
+@import url("https://fonts.googleapis.com/css?family=Lato:300,400,700,900");
+/** Media Queries **/
+html {
+  font-size: 62.5%;
+  box-sizing: border-box; }
+
+*, *:before, *:after {
+  box-sizing: inherit; }
+
+body {
+  font-family: "Lato", sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.8; }
+
+p {
+  color: #000000;
+  font-size: 2rem; }
+
+.contenedor {
+  width: 95%;
+  max-width: 120rem;
+  margin: 0 auto; }
+
+a {
+  text-decoration: none; }
+
+img,
+picture {
+  width: 100%;
+  display: block; }
+
+h1, h2, h3 {
+  font-family: "Lato", sans-serif;
+  margin: 2.5rem 0;
+  font-weight: 300;
+  text-align: center; }
+
+h1 {
+  font-size: 3.8rem; }
+
+h2 {
+  font-size: 3.4rem; }
+
+h3 {
+  font-size: 3rem; }
+
+h4 {
+  font-size: 2.6rem; }
+
+.seccion {
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem; }
+
+.contenido-centrado {
+  max-width: 800px; }
+
+.proveedor-nombre {
+  color: #FFFFFF;
+  background-color: #000000; }
+
+@media (min-width: 768px) {
+  .encabezado-compra {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    column-gap: 1.25rem; } }
+
+.datos {
+  display: flex;
+  flex-direction: column; }
+
+@media (min-width: 768px) {
+  .fila-compra {
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr 2fr 2fr;
+    column-gap: 1.25rem; } }
+
+.elemento-compra {
+  width: 90%;
+  display: flex; }
+  @media (min-width: 768px) {
+    .elemento-compra {
+      display: flex;
+      flex-direction: column; } }
+
+@media (min-width: 768px) {
+  .detalle-compra {
+    display: flex;
+    flex-direction: column; } }
+
+.modaltope {
+  position: absolute;
+  width: 60%;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-top: 5%;
+  display: block;
+  background-color: #e1e1e1;
+  top: 0;
+  border: 2px solid #000000;
+  color: blue; }
+
+.modalcentro {
+  position: absolute;
+  width: 80%;
+  height: 50%;
+  margin-top: 20%;
+  margin-left: 10%;
+  margin-right: 10%;
+  display: block;
+  top: 0;
+  border: 2px solid #000000;
+  background-color: #e1e1e1;
+  color: #000000;
+  overflow: auto; }
+
+.modal-titulo {
+  display: block;
+  text-align: center;
+  background-color: #333333;
+  color: #FFFFFF; }
+
+.hidden {
+  display: none; }
+
+.modal-contenido {
+  padding: 1.25rem; }
+
+.col-2 {
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  gap: 2.5rem; }
+
+.envio-detalles {
+  width: 100%;
+  overflow: hidden; }
+
+.envio-elemento {
+  width: 100%; }
+
+.envio-total {
+  margin-top: 2.5rem;
+  margin-left: 50%; }
+
+.envio-fila {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr; }
+
+.envio-botones {
+  margin-top: 2.5rem;
+  text-align: right; }
+
+.envio-boton {
+  margin-left: 1.25rem; }
+
+.variacion-fila {
+  display: grid;
+  grid-template-columns: 4fr 1fr; }
+
+.variacion-elemento {
+  width: 100%; }
+
+.variacion-opc {
+  margin-top: 2.5rem; }
+
+.variacion-producto {
+  margin-top: 1.25rem;
+  padding: 1.25rem;
+  background-color: #333333;
+  color: #FFFFFF; }
+
+.label-total {
+  border: 1px solid #e1e1e1;
+  text-align: right;
+  padding-right: 1.25rem;
+  font-weight: 700; }
+
+/*=============================================
+=                   Proveedor                  =
+=============================================*/
+.prov-flex {
+  display: flex;
+  flex-direction: row;
+  margin-top: 1.25rem; }
+
+.prov-campo {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  column-gap: 1.25rem; }
+
+.prov-campo2 {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  column-gap: 2rem; }
+
+.prov-label {
+  flex: 0 0 8rem; }
+
+.prov-label2 {
+  flex: 0 0 15rem; }
+
+.field {
+  width: 100%; }
+
+.prov-campo-3col {
+  display: grid;
+  grid-template-columns: 40% 30% 30%;
+  column-gap: 1.25rem; }
+
+.datos {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem; }
+
+.prov-input {
+  width: 100%; }
